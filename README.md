@@ -4,9 +4,9 @@
 - [x] possivel buscar extrato
 - [x] possivel realizar deposito
 - [x] possivel realizar saque
-- [] possivel buscar extrato por data
-- [] possivel atualizar dados da conta
-- [] possivel obter dados da conta
+- [x] possivel buscar extrato por data
+- [x] possivel atualizar dados da conta
+- [x] possivel obter dados da conta
 - [] possivel deletar conta
 
 ### Regras

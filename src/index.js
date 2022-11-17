@@ -103,6 +103,23 @@ app.get('/statement/date', confirmAccountCPF, (req, res) => {
   return res.status(200).send(statement)
 })
 
+app.put('/account', confirmAccountCPF, (req, res) => {
+  const { name } = req.body
+  const { customer } = req
+
+  customer.name = name
+
+  return response.status(201).send('Nome alterado')
+})
+
+app.delete('/account', confirmAccountCPF, (req, res) => {
+  const { customer } = req
+
+  customers.splice(customer, 1)
+
+  return response.status(204).send(customers)
+})
+
 app.listen(3333, () => {
   console.log('Servidor iniciado')
 })
